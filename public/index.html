@@ -11,9 +11,9 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      // Redirect to /#/ if no hash is present (for HashRouter on GitHub Pages)
-      if (!window.location.hash) {
-        window.location.hash = '/';
+      // Redirect to /#/ if accessing the base URL without hash
+      if (window.location.pathname === '/personal_website/' && !window.location.hash) {
+        window.location.replace(window.location.pathname + '#/');
       }
     </script>
   </body>
