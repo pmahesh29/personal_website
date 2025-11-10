@@ -2,6 +2,12 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column; /* Ensure header is above content */
+  justify-content: center;
+}
+
+.about-content h2 {
+  margin-bottom: 2px;
+  margin-top: 0;
 }
 
 .about-text {
@@ -35,9 +41,11 @@
   text-align: center;
 }
 
+
 .subtitle {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
   color: #666;
-  text-align: center;
+  text-align: left;    /* optional - aligns better with layout */
 }
