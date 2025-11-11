@@ -3,8 +3,15 @@ import '../CSS/Projects.css';
 import photon from '../Assets/Photon.jpg';
 import fitagotchi from '../Assets/Fitagotchi.jpg';
 import cyber from '../Assets/Cyber.jpg';
+import labImage from '../Assets/Lab.jpg'; // ADD YOUR LAB IMAGE HERE
 
 const projects = [
+  {
+    title: 'Cyber Attack Simulation Home Lab',
+    description: 'Isolated virtualized environment with Kali Linux, Metasploitable2, and pfSense featuring Suricata IDS. Conducted reconnaissance, service enumeration, packet analysis, and developed custom detection rules for SOC practice.',
+    image: labImage,
+    link: 'https://github.com/pmahesh29/cyber-attack-simulation-lab'
+  },
   {
     title: 'Cyber Pattern Labs',
     description: 'Educational penetration testing platform built with React that simulates real-world security scenarios for hands-on cybersecurity training and ethical hacking practice.',
