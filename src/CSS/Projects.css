@@ -60,6 +60,58 @@
   margin-bottom: 20px;
 }
 
+/* Project Buttons Container */
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Base Button Styles */
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+/* GitHub Button */
+.github-button {
+  background-color: #a15c5c;
+  color: white;
+}
+
+.github-button:hover {
+  background-color: #8a4545;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(161, 92, 92, 0.3);
+}
+
+/* Demo Button */
+.demo-button {
+  background: linear-gradient(135deg, #00ff88, #00d4aa);
+  color: #0a0e27;
+}
+
+.demo-button:hover {
+  background: linear-gradient(135deg, #00ffaa, #00e6bb);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.4);
+}
+
+.project-button svg {
+  font-size: 16px;
+}
+
+/* Legacy link style - keeping for backwards compatibility */
 .project-link {
   display: inline-block;
   padding: 10px 20px;
@@ -88,5 +140,21 @@
   
   .project-content {
     text-align: center;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-button {
+    width: 100%;
+    justify-content: center;
   }
 }
