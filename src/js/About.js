@@ -10,7 +10,7 @@ const About = () => (
           <img src={myPhoto} alt="Pranav Mahesh" className="hero-photo" />
           <div className="hero-text">
             <h2 className="hero-name">Pranav Mahesh</h2>
-            <p className="hero-subtitle">Application Support Intern @ Arvest Bank | Aspiring Security Analyst</p>
+            <p className="hero-subtitle">Application Support Intern @ Arvest Bank | Aspiring Security�ast</p>
           </div>
         </div>
         
