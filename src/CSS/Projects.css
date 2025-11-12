@@ -2,6 +2,7 @@
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #0f172a;
 }
 
 .projects {
@@ -14,15 +15,18 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  background: none;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  transition: transform 0.3s;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.1);
+  border: 1px solid #334155;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 255, 136, 0.2);
+  border-color: #00ff88;
 }
 
 .project-image {
@@ -34,13 +38,17 @@
   flex-shrink: 0;
 }
 
+.lab-image {
+  object-fit: cover !important;
+}
+
 .project-content {
   flex: 1;
   text-align: left;
 }
 
 .project h3 {
-  color: #0c0b0b;
+  color: white;
   margin-bottom: 15px;
   font-size: 28px;
 }
@@ -48,7 +56,7 @@
 .project-description {
   font-size: 16px;
   line-height: 1.8;
-  color: #555;
+  color: #979797;
   margin-bottom: 20px;
 }
 

@@ -1,29 +1,29 @@
 /* Main Container - Centered like Home page */
 .Classes {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
 .resume-container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Section Titles */
 .section-title {
   font-size: 32px;
-  color: #333;
+  color: #00ff88;
   margin-bottom: 30px;
   margin-top: 40px;
-  border-bottom: 3px solid #a15c5c;
+  border-bottom: 3px solid #00ff88;
   padding-bottom: 10px;
 }
 
 .section-title.classes {
-  /* Override flexbox for main section titles */
   display: block;
   text-align: left;
-  padding: 0;
   font-size: 25px;
 }
 
@@ -40,41 +40,43 @@
 }
 
 .cert-card {
-  background: #f9f9f9;
-  border-left: 4px solid #a15c5c;
+  background: #1e293b;
+  border-left: 4px solid #00ff88;
   padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #334155;
 }
 
 .cert-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+  border-color: #00ff88;
 }
 
 .cert-title {
   font-size: 18px;
-  color: #333;
+  color: #e2e8f0;
   margin-bottom: 8px;
   font-weight: 600;
 }
 
 .cert-provider {
   font-size: 14px;
-  color: #666;
+  color: #94a3b8;
   margin-bottom: 4px;
 }
 
 .cert-date {
   font-size: 14px;
-  color: #888;
+  color: #64748b;
   font-style: italic;
   margin-bottom: 10px;
 }
 
 .cert-skills {
   font-size: 14px;
-  color: #555;
+  color: #94a3b8;
 }
 
 /* In Progress Section */
@@ -83,16 +85,86 @@
 }
 
 .in-progress-card {
-  background: #fff3cd;
-  border-left: 4px solid #ffc107;
+  background: #1e293b;
+  border-left: 4px solid #ff6b35;
   padding: 20px;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 48%;
+  border: 1px solid #ff6b35;
 }
 
 /* Coursework Section */
 .coursework-section {
   margin-top: 40px;
+}
+
+.coursework-section h3 {
+  color: #f1f5f9;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Course Cards (for Cybersecurity) */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.course-card {
+  background: #1e293b;
+  border-left: 4px solid #00ff88;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+  border-color: #00ff88;
+}
+
+.course-title {
+  color: #e2e8f0;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.course-title:hover {
+  color: #00ff88;
+}
+
+.course-description {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Old style for CS and Math courses */
+.coursework-section ul {
+  background: #1e293b;
+  padding: 25px 35px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  margin-bottom: 30px;
+  list-style: none;
+  max-width: 100%;
+}
+
+.coursework-section ul li {
+  margin-bottom: 0;
+}
+
+.coursework-section ul p {
+  margin: 0;
 }
 
 .classes {
@@ -101,27 +173,29 @@
   justify-content: left;
   margin-top: 20px;
   font-size: 24px;
-  color: #333;
+  color: #e2e8f0;
 }
 
 .dropdown-button {
-  background-color: #a15c5c;
-  color: white;
+  background-color: #00ff88;
+  color: #0f172a;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 15px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 600;
 }
 
 .dropdown-button:hover {
-  background-color: #8a4545;
+  background-color: #00cc6f;
+  transform: translateY(-2px);
 }
 
 .h2 {
-  color: #0c0b0b;
+  color: #e2e8f0;
   text-align: left;
 }
 
@@ -133,8 +207,8 @@
 .hover-text {
   visibility: hidden;
   width: 500px;
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: #1e293b;
+  color: #e2e8f0;
   text-align: left;
   border-radius: 6px;
   padding: 10px;
@@ -146,7 +220,8 @@
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 255, 136, 0.15);
+  border: 1px solid #00ff88;
 }
 
 .hover-container:hover .hover-text {
@@ -155,14 +230,23 @@
 }
 
 .custom-link {
-  color: black;
-  font-size: large;
+  color: #cbd5e1;
+  font-size: 16px;
   text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.custom-link:last-child {
+  border-bottom: none;
 }
 
 .custom-link:hover {
-  text-decoration: underline;
-  color: #a15c5c;
+  color: #00ff88;
+  padding-left: 10px;
+  transition: all 0.3s;
 }
 
 /* Responsive Design */
@@ -170,10 +254,18 @@
   .certifications-grid {
     grid-template-columns: 1fr;
   }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
   .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .courses-grid {
     grid-template-columns: 1fr;
   }
   
@@ -184,7 +276,6 @@
   
   .section-title {
     font-size: 26px;
-    padding: 20px 15px;
   }
   
   .Classes {

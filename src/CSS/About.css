@@ -1,13 +1,21 @@
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
 .about-content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  color: #e2e8f0;
 }
 
 .about-content h2 {
   margin-bottom: 2px;
   margin-top: 0;
+  color: #00ff88;
 }
 
 .about-text {
@@ -22,7 +30,8 @@
   height: auto;
   margin-right: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 255, 136, 0.2);
+  border: 2px solid #334155;
 }
 
 .text-content {
@@ -33,12 +42,13 @@
   margin: 10px 0;
   font-size: 16px;
   line-height: 1.6;
+  color: #cbd5e1;
 }
 
 .name-header {
   font-size: 28px;
   margin-bottom: 5px;
-  color: #333;
+  color: #00ff88;
   text-align: center;
 }
 
@@ -46,7 +56,7 @@
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
-  color: #666;
+  color: #94a3b8;
   text-align: left;
 }
 
@@ -54,18 +64,23 @@
 .work-experience {
   margin-top: 40px;
   padding-top: 30px;
-  border-top: 2px solid #e0e0e0;
+  border-top: 2px solid #00ff88;
 }
 
 .work-experience h3 {
   font-size: 24px;
   margin-bottom: 30px;
-  color: #333;
+  color: #00ff88;
   text-decoration: underline;
+  text-decoration-color: #00ff88;
 }
 
 .experience-item {
   margin-bottom: 45px;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #00ff88;
 }
 
 .experience-header {
@@ -73,22 +88,22 @@
 }
 
 .experience-header .company {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #00ff88;
   margin-bottom: 4px;
 }
 
 .experience-header h4 {
   font-size: 17px;
   margin: 4px 0;
-  color: #444;
+  color: #f1f5f9;
   font-weight: 600;
 }
 
 .experience-header .date {
   font-size: 14px;
-  color: #888;
+  color: #cbd5e1;
   font-style: italic;
   margin-top: 4px;
 }
@@ -102,4 +117,5 @@
   margin-bottom: 8px;
   line-height: 1.6;
   font-size: 15px;
+  color: #cbd5e1;
 }
