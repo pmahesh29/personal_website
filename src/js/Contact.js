@@ -94,7 +94,11 @@ const Contact = () => {
       <div className="contact-container">
         <h2>Contact</h2>
         <p className="contact-intro">
-          Have a question or want to work together? Feel free to reach out!
+          Have a question or want to work together? Feel free to reach out! 
+          <br/>
+          <em style={{fontSize: '14px', opacity: 0.8}}>
+            Tip: Use the floating chat button in the corner for quick messages!
+          </em>
         </p>
         <form id="contactForm" action="https://formspree.io/f/mwpekoaw" method="POST" onSubmit={handleSubmit}>
           <div className="form-group">

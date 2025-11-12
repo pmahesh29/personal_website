@@ -1,0 +1,248 @@
+.education {
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Unified Education Card */
+.education-section {
+  margin-bottom: 60px;
+}
+
+.education-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px; /* 👈 Same width as your cert cards */
+  margin: 0 auto 60px; /* Center it and add bottom space */
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 255, 136, 0.1);
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 136, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+
+.education-card .degree-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.education-card .university-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00ff88;
+  margin-bottom: 4px;
+}
+
+.education-card .degree-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.education-card .degree-concentration {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.education-card .degree-details {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.education-summary {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.education-summary strong {
+  color: #00ff88;
+}
+
+.education-detail {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Section Titles */
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #00ff88;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(0, 255, 136, 0.3);
+}
+
+/* Certifications */
+.certifications-section {
+  margin-bottom: 60px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.cert-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 136, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+
+.cert-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.cert-provider {
+  font-size: 15px;
+  color: #00ff88;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.cert-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 12px;
+}
+
+.cert-skills {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.cert-skills strong {
+  color: #00bfff;
+}
+
+/* In Progress Section */
+.in-progress-section {
+  margin-bottom: 60px;
+}
+
+.in-progress-card {
+  background: rgba(0, 191, 255, 0.1);
+  border: 2px dashed rgba(0, 191, 255, 0.4);
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px;
+}
+
+.in-progress-card .cert-title {
+  color: #00bfff;
+}
+
+.in-progress-card .cert-provider {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* Coursework Section */
+.coursework-section {
+  margin-bottom: 60px;
+}
+
+.course-category {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  border-left: 4px solid #00ff88;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.course-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 191, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 191, 255, 0.15);
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00bfff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.course-title:hover {
+  color: #00ff88;
+  text-decoration: underline;
+}
+
+.course-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .certifications-grid,
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-category {
+    font-size: 20px;
+  }
+}

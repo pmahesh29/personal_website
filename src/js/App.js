@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
-import Home from './Home';
-import Classes from './Classes';
+import About from './About';
+import Education from './Education';
 import Projects from './Projects';
 import Contact from './Contact';
-import FloatingContactButton from './FloatingContactButton';
+import FloatingWidgets from './FloatingWidgets';
 import '../CSS/App.css';
 // Import icons
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -15,14 +15,15 @@ const App = () => (
       <div className="container">
         <nav> 
           <ul>
-            <li><NavLink to="/" end className={({ isActive }) => (isActive ? "active-link" : "")}>Home</NavLink></li>
+            <li><NavLink to="/" end className={({ isActive }) => (isActive ? "active-link" : "")}>About</NavLink></li>
             <li><NavLink to="/projects" className={({ isActive }) => (isActive ? "active-link" : "")}>Projects</NavLink></li>
-            <li><NavLink to="/classes" className={({ isActive }) => (isActive ? "active-link" : "")}>Courses</NavLink></li>
+            <li><NavLink to="/education" className={({ isActive }) => (isActive ? "active-link" : "")}>Skills</NavLink></li>
             <li>
               <a 
-                href="\Pranav_Mahesh_Resume.pdf" 
-                download="Pranav_Mahesh_Resume.pdf"
-                className="resume-download-link"
+                href="/Pranav_Mahesh_Resume.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-view-link"
               >
                 Resume
               </a>
@@ -43,15 +44,15 @@ const App = () => (
     
     <main>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/classes" element={<Classes />} />
+        <Route path="/" element={<About />} />
+        <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
     
-    {/* Floating Contact Button - appears on all pages */}
-    <FloatingContactButton />
+    {/* Floating Widgets - contact, resume download, and scroll buttons */}
+    <FloatingWidgets />
     
     <footer>
       <div className="container">
