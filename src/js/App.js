@@ -4,6 +4,7 @@ import Home from './Home';
 import Classes from './Classes';
 import Projects from './Projects';
 import Contact from './Contact';
+import FloatingContactButton from './FloatingContactButton';
 import '../CSS/App.css';
 // Import icons
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -39,6 +40,7 @@ const App = () => (
         </nav>
       </div>
     </header>
+    
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -47,6 +49,10 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
+    
+    {/* Floating Contact Button - appears on all pages */}
+    <FloatingContactButton />
+    
     <footer>
       <div className="container">
         <p> Pranav Mahesh's Portfolio</p>

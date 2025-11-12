@@ -1,0 +1,137 @@
+/* Floating Contact Button */
+.floating-contact-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #00ff88, #00d4aa);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4),
+              0 0 40px rgba(0, 255, 136, 0.2);
+  cursor: pointer;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.floating-contact-btn:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 255, 136, 0.5),
+              0 0 50px rgba(0, 255, 136, 0.3);
+  animation: none;
+}
+
+.floating-contact-btn:active {
+  transform: scale(0.95);
+}
+
+/* Icon Styling */
+.contact-icon {
+  font-size: 28px;
+  color: #0a0e27;
+  transition: all 0.3s ease;
+}
+
+.floating-contact-btn:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.contact-tooltip {
+  position: absolute;
+  right: 75px;
+  background: rgba(0, 255, 136, 0.95);
+  color: #0a0e27;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+}
+
+.contact-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid rgba(0, 255, 136, 0.95);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.floating-contact-btn:hover .contact-tooltip {
+  opacity: 1;
+  right: 80px;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4),
+                0 0 40px rgba(0, 255, 136, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(0, 255, 136, 0.6),
+                0 0 50px rgba(0, 255, 136, 0.3);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4),
+                0 0 40px rgba(0, 255, 136, 0.2);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .floating-contact-btn {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .contact-icon {
+    font-size: 24px;
+  }
+
+  .contact-tooltip {
+    display: none; /* Hide tooltip on mobile to save space */
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-contact-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .contact-icon {
+    font-size: 22px;
+  }
+}
+
+/* Accessibility */
+.floating-contact-btn:focus {
+  outline: 3px solid rgba(0, 255, 136, 0.5);
+  outline-offset: 3px;
+}
+
+/* Prevent button from overlapping footer on small screens */
+@media (max-height: 600px) {
+  .floating-contact-btn {
+    bottom: 15px;
+  }
+}
