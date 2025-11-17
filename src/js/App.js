@@ -5,6 +5,9 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import FloatingWidgets from './FloatingWidgets';
+import Resume from './Resume';
+
+
 import '../CSS/App.css';
 // Import icons
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -18,16 +21,7 @@ const App = () => (
             <li><NavLink to="/" end className={({ isActive }) => (isActive ? "active-link" : "")}>About</NavLink></li>
             <li><NavLink to="/projects" className={({ isActive }) => (isActive ? "active-link" : "")}>Projects</NavLink></li>
             <li><NavLink to="/skills" className={({ isActive }) => (isActive ? "active-link" : "")}>Skills</NavLink></li>
-            <li>
-              <a 
-                href="/Pranav_Mahesh_Resume.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="resume-view-link"
-              >
-                Resume
-              </a>
-            </li>
+            <li><NavLink to="/resume" className={({ isActive }) => (isActive ? "active-link" : "")}>Resume</NavLink></li>
             <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "")}>Contact</NavLink></li>
             <li className="social-icons">
               <a href="https://github.com/pmahesh29" target="_blank" rel="noopener noreferrer">
@@ -47,6 +41,7 @@ const App = () => (
         <Route path="/" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
@@ -56,7 +51,7 @@ const App = () => (
     
     <footer>
       <div className="container">
-        <p> Pranav Mahesh's Portfolio</p>
+        <p>&copy; 2025 Pranav Mahesh </p>
       </div>
     </footer>
   </Router>
