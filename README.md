@@ -1,17 +1,6 @@
 # Pranav Mahesh - Portfolio Website
 
-[![Live Site](https://img.shields.io/badge/Live-www.pranav--mahesh.net-00ff88?style=for-the-badge)](https://www.pranav-mahesh.net)
-[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-222222?style=for-the-badge&logo=github)](https://pages.github.com/)
-
-> A modern, responsive portfolio website showcasing my cybersecurity work, projects, and professional experience.
-
-## 🌐 Live Site
-
-Visit the live site at: **[www.pranav-mahesh.net](https://www.pranav-mahesh.net)**
-
----
-
+[![$ visit site](https://img.shields.io/badge/$_visit_site-www.pranav--mahesh.net-00ff88?style=for-the-badge&logo=gnubash&logoColor=00ff88&labelColor=0d1117&color=1e293b)](https://www.pranav-mahesh.net)
 ## 📋 Table of Contents
 
 - [About](#about)
@@ -232,3 +221,4 @@ www.pranav-mahesh.net
   <p>Made by Pranav Mahesh</p>
   <p>© 2025 Pranav Mahesh. All Rights Reserved.</p>
 </div>
+
