@@ -47,15 +47,11 @@ export default async function handler(req, res) {
           model: 'meta-llama/Llama-3.2-1B-Instruct',
           messages: [
             {
-              role: 'system',
-              content: 'You are a helpful assistant for Pranav Mahesh\'s portfolio website.'
-            },
-            {
               role: 'user',
               content: prompt
             }
           ],
-          max_tokens: 200,
+          max_tokens: 250,
           temperature: 0.7,
           top_p: 0.9
         })
