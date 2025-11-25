@@ -36,7 +36,7 @@ export default async function handler(req, res) {
     }
 
     const response = await fetch(
-  'https://router.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2',
+      'https://router.huggingface.co/v1/chat/completions',
       {
         method: 'POST',
         headers: {
@@ -44,13 +44,20 @@ export default async function handler(req, res) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          inputs: prompt,
-          parameters: {
-            max_new_tokens: 200,
-            temperature: 0.7,
-            top_p: 0.9,
-            return_full_text: false,
-          }
+          model: 'meta-llama/Llama-3.2-1B-Instruct',
+          messages: [
+            {
+              role: 'system',
+              content: 'You are a helpful assistant for Pranav Mahesh\'s portfolio website.'
+            },
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          max_tokens: 200,
+          temperature: 0.7,
+          top_p: 0.9
         })
       }
     );
@@ -65,7 +72,13 @@ export default async function handler(req, res) {
     }
 
     const data = await response.json();
-    return res.status(200).json(data);
+    
+    // Extract response from chat completions format
+    const botResponse = data.choices?.[0]?.message?.content || 'I had trouble generating a response.';
+    
+    return res.status(200).json({
+      generated_text: botResponse
+    });
 
   } catch (error) {
     console.error('Server error:', error);
