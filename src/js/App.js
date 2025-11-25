@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import FloatingWidgets from './FloatingWidgets';
 import Resume from './Resume';
+import Chatbot from '../components/Chatbot';
 
 
 import '../CSS/App.css';
@@ -48,6 +49,7 @@ const App = () => (
     
     {/* Floating Widgets - contact, resume download, and scroll buttons */}
     <FloatingWidgets />
+    <Chatbot />
     
     <footer>
       <div className="container">

@@ -4,7 +4,7 @@
 .chat-bubble {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   width: 60px;
   height: 60px;
   background: linear-gradient(135deg, #00ff88 0%, #00e577 100%);
@@ -47,7 +47,7 @@
 .chat-window {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   width: 400px;
   height: 600px;
   background: #1e293b;
