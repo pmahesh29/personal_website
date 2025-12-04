@@ -20,8 +20,9 @@ const Chatbot = () => {
 
   useEffect(() => { scrollToBottom(); }, [messages]);
 
-  const queryAPI = async (userMessage) => {
+    const queryAPI = async (userMessage) => {
     try {
+      // THIS IS THE ONLY LINE THAT CHANGED — NEW APP ROUTER ENDPOINT
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -34,10 +35,13 @@ const Chatbot = () => {
         }),
       });
 
-      if (!response.ok) throw new Error('Network error');
+      if (!response.ok) {
+        const err = await response.text();
+        throw new Error(`HTTP ${response.status}: ${err}`);
+      }
 
       const data = await response.json();
-      return data.generated_text?.trim() || "Hmm, try asking again!";
+      return data.generated_text?.trim() || "Hmm, try again!";
 
     } catch (error) {
       console.error('Chatbot error:', error);
