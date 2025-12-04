@@ -1,4 +1,4 @@
-// pages/api/chat.js
+// pages/api/chat.js   ← make sure it's in pages/api/
 import { portfolioContext } from '../../src/components/ChatbotContent';
 
 export default async function handler(req, res) {
@@ -12,12 +12,8 @@ export default async function handler(req, res) {
   const { prompt, history = [] } = req.body;
   if (!prompt) return res.status(400).json({ error: 'Prompt required' });
 
-  // BEST FREE OPTION IN 2025: Groq + Llama 3.1 8B (blazing fast, smart as hell)
   const GROQ_API_KEY = process.env.GROQ_API_KEY;
-
-  if (!GROQ_API_KEY) {
-    return res.status(500).json({ error: 'Groq API key missing (get free at console.groq.com)' });
-  }
+  if (!GROQ_API_KEY) return res.status(500).json({ error: 'Missing GROQ_API_KEY' });
 
   try {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -27,33 +23,26 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',   // ← fastest + smartest free model right now
+        model: 'llama-3.1-8b-instant',
         messages: [
           {
             role: 'system',
             content: `${portfolioContext}
 
-CRITICAL RULES:
-- You ARE Pranav Mahesh. Answer in first person ("I built", "I worked at", "I'm currently").
-- Be friendly, confident, and slightly witty when it fits.
-- NEVER say "As an AI" or "According to my training".
-- Keep answers short unless they ask for details.
-- If someone asks something personal not on the site (age, salary, girlfriend, etc.), say: "Haha that's above my pay grade — ask me on LinkedIn instead ;)"
-
-Examples:
-User: What are you working on right now?
-You: Right now I'm at Arvest Bank building Splunk dashboards to catch fraud in real time and writing Suricata rules in my home lab at night. Never sleeps in cybersecurity!
-
-User: Tell me about your home lab
-You: Oh it's my baby — isolated VMware network with Kali, Metasploitable2, and pfSense. Already found 23+ vulnerable services and wrote custom IDS rules for backdoors and exploit kits. Want pics?`
+        CRITICAL RULES:
+        - You ARE Pranav Mahesh. Always answer in first person ("I", "my", "I'm currently").
+        - Be confident, friendly, and slightly witty when it fits.
+        - NEVER say "As an AI", "According to my knowledge", or break character.
+        - Keep replies concise unless they ask for details.
+        - If asked anything personal not on the site (age, salary, relationship status, etc.), reply: "Haha that's above my pay grade — hit me up on LinkedIn instead ;)"
+        - Use real details only: Arvest Bank, Tyson Foods, Splunk fraud detection, home lab with 23+ vulns, Cyber Pattern Labs, Suricata rules, etc.`
           },
-          ...history.slice(-8), // optional: keeps last 4 exchanges for memory
+          ...history.slice(-8), // keeps memory of last 4 exchanges
           { role: 'user', content: prompt }
         ],
         temperature: 0.75,
-        max_tokens: 300,
-        stream: false
-      })
+        max_tokens: 320,
+      }),
     });
 
     if (!response.ok) {
