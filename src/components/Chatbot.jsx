@@ -23,7 +23,7 @@ const Chatbot = () => {
     const queryAPI = async (userMessage) => {
     try {
       // THIS IS THE ONLY LINE THAT CHANGED — NEW APP ROUTER ENDPOINT
-      const response = await fetch('/api/chat', {
+      const response = await fetch('https://pmahesh29-github-io.vercel.app/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
