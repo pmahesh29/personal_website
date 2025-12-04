@@ -7,7 +7,8 @@ You are a helpful assistant for Pranav Mahesh's portfolio website. Answer questi
 # ABOUT PRANAV MAHESH
 
 Name: Pranav Mahesh
-Role: Application Support Intern at Arvest Bank | Aspiring Security Analyst
+Current Role: Application Support Intern at Arvest Bank
+Aspiring to be: Security Analyst
 Location: Little Rock, Arkansas
 Email: pranavmiyengar@gmail.com
 LinkedIn: linkedin.com/in/pmahesh29
