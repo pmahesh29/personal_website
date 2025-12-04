@@ -77,7 +77,7 @@ CRITICAL RULES:
     ];
 
     // Call Groq API
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    const response = await fetch('https://pmahesh29-github-io.vercel.app/api/chat', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${GROQ_API_KEY}`,
