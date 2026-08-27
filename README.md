@@ -1,6 +1,6 @@
 # Pranav Mahesh - Portfolio Website
 
-[![$ visit site](https://img.shields.io/badge/$_visit_site-www.pranav--mahesh.net-00ff88?style=for-the-badge&logo=gnubash&logoColor=00ff88&labelColor=0d1117&color=1e293b)](https://www.pranavmahesh.com)
+[![$ visit site](https://img.shields.io/badge/$_visit_site-www.pranavmahesh.com-00ff88?style=for-the-badge&logo=gnubash&logoColor=00ff88&labelColor=0d1117&color=1e293b)](https://www.pranavmahesh.com)
 ## 📋 Table of Contents
 
 - [About](#about)
