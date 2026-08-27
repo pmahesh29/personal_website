@@ -21,7 +21,7 @@ This is my personal portfolio website built with React, showcasing:
 - **Professional Experience:** Internships at Arvest Bank and Tyson Foods in cybersecurity and application support roles
 - **Projects:** Open-source cybersecurity platforms, home labs, and security research
 - **Skills:** Programming languages, security tools, and technical competencies
-- **Education:** Computer Science degree with Cybersecurity concentration from University of Arkansas
+- **Education:** Computer Science degree with Cybersecurity concentration from the University of Arkansas
 
 ---
 
@@ -68,12 +68,7 @@ This is my personal portfolio website built with React, showcasing:
 - **GitHub Pages** - Hosting
 - **gh-pages** - Deployment automation
 
-### Domain & DNS
-- **Custom Domain:** www.pranav-mahesh.net
-- **DNS Provider:** Cloudflare
-- **SSL/TLS:** GitHub Pages (Let's Encrypt)
 
----
 
 ## 🚀 Getting Started
 
@@ -194,7 +189,7 @@ Proxy: DNS only (gray cloud)
 ### GitHub Pages Configuration
 
 1. Repository Settings → Pages
-2. Custom domain: `www.pranav-mahesh.net`
+2. Custom domain: `www.pranavmahesh.com`
 3. Enforce HTTPS: ✅ Enabled
 
 ### CNAME File
@@ -210,7 +205,7 @@ www.pranav-mahesh.net
 
 **Pranav Mahesh**
 
-- **Website:** [www.pranav-mahesh.net](https://www.pranav-mahesh.net)
+- **Website:** [www.pranavmahesh.com](https://www.pranavmahesh.com)
 - **Email:** pranavmiyengar@gmail.com
 - **LinkedIn:** [linkedin.com/in/pmahesh29](https://linkedin.com/in/pmahesh29)
 - **GitHub:** [github.com/pmahesh29](https://github.com/pmahesh29)
