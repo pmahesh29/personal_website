@@ -34,7 +34,7 @@ const Resume = () => {
               github.com/pmahesh29
             </a>
             <span>•</span>
-            <a href="https://pranav-mahesh.net" target="_blank" rel="noopener noreferrer">
+            <a href="https://pranavmahesh.com" target="_blank" rel="noopener noreferrer">
               pranavmahesh.com
             </a>
             <span>•</span>
