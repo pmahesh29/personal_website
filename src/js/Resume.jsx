@@ -35,7 +35,7 @@ const Resume = () => {
             </a>
             <span>•</span>
             <a href="https://pranav-mahesh.net" target="_blank" rel="noopener noreferrer">
-              pranav-mahesh.net
+              pranavmahesh.com
             </a>
             <span>•</span>
             <a href="https://linkedin.com/in/pmahesh29" target="_blank" rel="noopener noreferrer">
